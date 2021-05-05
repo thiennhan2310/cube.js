@@ -17,4 +17,3 @@ xargo = false
 [target.x86_64-unknown-linux-musl]
 image = "cubejs/rust-cross:x86_64-unknown-linux-musl"
 xargo = false
-# linker = "./cross/x86_64-unknown-linux-musl-linker"
