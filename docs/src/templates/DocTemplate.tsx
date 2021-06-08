@@ -48,7 +48,7 @@ type Props = {
   changePage(page: Page): void;
   setScrollSectionsAndGithubUrl: SetScrollSectionsAndGithubUrlFunction;
   data: any;
-  pathContext: any;
+  pageContext: any;
 };
 
 type State = {
@@ -71,7 +71,7 @@ class DocTemplate extends Component<Props, State> {
     this.createAnchors(
       html,
       frontmatter.title,
-      getGithubUrl(this.props.pathContext.fileAbsolutePath)
+      getGithubUrl(this.props.pageContext.fileAbsolutePath)
     );
   }
 
